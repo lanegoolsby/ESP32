@@ -116,10 +116,10 @@ esp_err_t read_current_lux() {
 	uint8_t data1_l = 0;
 	uint8_t data2_l = 0;
 
-	callI2C(0x8C, &data1_l);
-	callI2C(0x8D, &data1_h);
-	callI2C(0x8E, &data2_l);
-	callI2C(0x8F, &data2_h);
+	callI2C(0x9C, &data1_l);
+	callI2C(0x9D, &data1_h);
+	callI2C(0x9E, &data2_l);
+	callI2C(0x9F, &data2_h);
 
 	printf("data_1l: %02x\n", data1_l);
 	printf("data_1h: %02x\n", data1_h);
@@ -131,7 +131,7 @@ esp_err_t read_current_lux() {
 	uint16_t ch0 = (data1_l << 8) | data1_h;
 	uint16_t ch1 = (data2_l << 8) | data2_h;
 	long lux = calculateLux(ch0, ch1);
-	ESP_LOGI("mailbox", "calculated 1ux value %ld", lux);
+	ESP_LOGI("mailbox", "calculated lux value %ld", lux);
 
 	return ESP_OK;
 }
