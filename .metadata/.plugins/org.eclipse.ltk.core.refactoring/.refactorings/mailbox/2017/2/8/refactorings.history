@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;mailbox/main/lib&apos; to &apos;tsl2561&apos;" description="Rename resource &apos;lib&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="main/lib" name="tsl2561" stamp="1488038367627" updateReferences="true"/>
+</session>

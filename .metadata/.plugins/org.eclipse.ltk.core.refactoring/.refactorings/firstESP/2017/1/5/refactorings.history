@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;firstESP/wifi_sample&apos; to &apos;wifi_sample.txt&apos;" description="Rename resource &apos;wifi_sample&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="wifi_sample" name="wifi_sample.txt" stamp="1485652477102" updateReferences="true"/>
+</session>

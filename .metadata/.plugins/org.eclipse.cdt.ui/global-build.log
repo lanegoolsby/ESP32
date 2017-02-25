@@ -1,0 +1,675 @@
+10:38:26 **** Build of configuration Default for project mailbox ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin
+10:51:22 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+10:51:25 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+10:51:28 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./lib/tsl2561.h: In function 'init_2561':
+/home/lane/workspace/mailbox/main/./lib/tsl2561.h:78:10: warning: unused variable 'isOn' [-Wunused-variable]
+  uint8_t isOn;
+          ^
+/home/lane/workspace/mailbox/main/./lib/tsl2561.h: In function 'calculateLux':
+/home/lane/workspace/mailbox/main/./lib/tsl2561.h:121:13: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+  if ((ratio >= 0) && (ratio <= TSL2561_LUX_K1T)) {
+             ^
+/home/lane/workspace/mailbox/main/./lib/tsl2561.h:151:11: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  if (temp < 0)
+           ^
+AR libmain.a
+LD app-template.elf
+esptool.py v2.0-beta1
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin
+11:03:40 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+11:03:41 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+11:03:45 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'calculateLux':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:58:13: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+  if ((ratio >= 0) && (ratio <= TSL2561_LUX_K1T)) {
+             ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:88:11: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  if (temp < 0)
+           ^
+AR libmain.a
+LD app-template.elf
+esptool.py v2.0-beta1
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin
+11:11:18 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+11:11:19 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+11:11:23 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'calculateLux':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:59:13: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+  if ((ratio >= 0) && (ratio <= TSL2561_LUX_K1T)) {
+             ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:89:11: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  if (temp < 0)
+           ^
+AR libmain.a
+LD app-template.elf
+esptool.py v2.0-beta1
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin
+11:31:04 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+11:31:08 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+11:31:11 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+In file included from /home/lane/workspace/mailbox/main/./main.c:17:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c: In function 'tsl2561_write_byte_data':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:208:17: error: implicit declaration of function 'i2c_smbus_write_byte_data' [-Werror=implicit-function-declaration]
+  uint8_t data = i2c_smbus_write_byte_data(tsl->file, reg, value);
+                 ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:212:10: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  if(data < 0)
+          ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:213:36: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+   DEBUG("error: helper_write8()\n");
+                                    ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c: In function 'tsl2561_write_word_data':
+/home/lane/esp/esp-idf/make/component_wrapper.mk:176: recipe for target 'main.o' failed
+/home/lane/esp/esp-idf/make/project.mk:382: recipe for target 'main-build' failed
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:230:18: error: implicit declaration of function 'i2c_smbus_write_word_data' [-Werror=implicit-function-declaration]
+  uint16_t data = i2c_smbus_write_word_data(tsl->file, reg, value);
+                  ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:234:10: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  if(data < 0)
+          ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:235:37: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+   DEBUG("error: helper_write16()\n");
+                                     ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c: In function 'tsl2561_read_word_data':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:256:17: error: implicit declaration of function 'i2c_smbus_read_word_data' [-Werror=implicit-function-declaration]
+  int16_t data = i2c_smbus_read_word_data(tsl->file, reg);
+                 ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c: In function 'tsl2561_set_addr':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:273:14: error: implicit declaration of function 'ioctl' [-Werror=implicit-function-declaration]
+  if((error = ioctl(tsl->file, I2C_SLAVE, tsl->address)) < 0)
+              ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:273:31: error: 'I2C_SLAVE' undeclared (first use in this function)
+  if((error = ioctl(tsl->file, I2C_SLAVE, tsl->address)) < 0)
+                               ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:273:31: note: each undeclared identifier is reported only once for each function it appears in
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:274:35: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+   DEBUG("error: ioctl() failed\n");
+                                   ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c: In function 'tsl2561_init':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:335:14: error: 'TSL2561_GAIN_0X' undeclared (first use in this function)
+  tsl->gain = TSL2561_GAIN_0X;
+              ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:336:26: error: 'TSL2561_INTEGRATION_TIME_402MS' undeclared (first use in this function)
+  tsl->integration_time = TSL2561_INTEGRATION_TIME_402MS;
+                          ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:366:2: error: implicit declaration of function 'tsl2561_enable' [-Werror=implicit-function-declaration]
+  tsl2561_enable(_tsl);
+  ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:367:2: error: implicit declaration of function 'tsl2561_set_timing' [-Werror=implicit-function-declaration]
+  tsl2561_set_timing(_tsl, tsl->integration_time, tsl->gain);
+  ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c: At top level:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:411:6: warning: conflicting types for 'tsl2561_set_timing'
+ void tsl2561_set_timing(void *_tsl, int integration_time, int gain) {
+      ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:367:2: note: previous implicit declaration of 'tsl2561_set_timing' was here
+  tsl2561_set_timing(_tsl, tsl->integration_time, tsl->gain);
+  ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c: In function 'tsl2561_close':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:519:55: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+   DEBUG("error: %s close() failed\n", tsl->i2c_device);
+                                                       ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c: In function 'tsl2561_read':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:540:8: error: 'TSL2561_INTEGRATION_TIME_402MS' undeclared (first use in this function)
+   case TSL2561_INTEGRATION_TIME_402MS:
+        ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:544:8: error: 'TSL2561_INTEGRATION_TIME_101MS' undeclared (first use in this function)
+   case TSL2561_INTEGRATION_TIME_101MS:
+        ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:548:8: error: 'TSL2561_INTEGRATION_TIME_13MS' undeclared (first use in this function)
+   case TSL2561_INTEGRATION_TIME_13MS:
+        ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c: In function 'tsl2561_lux':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:575:2: error: implicit declaration of function 'tsl2561_luminosity' [-Werror=implicit-function-declaration]
+  tsl2561_luminosity(_tsl, &visible, &channel1);
+  ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:578:8: error: 'TSL2561_INTEGRATION_TIME_13MS' undeclared (first use in this function)
+   case TSL2561_INTEGRATION_TIME_13MS:
+        ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:581:8: error: 'TSL2561_INTEGRATION_TIME_101MS' undeclared (first use in this function)
+   case TSL2561_INTEGRATION_TIME_101MS:
+        ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c: At top level:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:596:6: warning: conflicting types for 'tsl2561_luminosity'
+ void tsl2561_luminosity(void *_tsl, int *channel0, int *channel1) {
+      ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:575:2: note: previous implicit declaration of 'tsl2561_luminosity' was here
+  tsl2561_luminosity(_tsl, &visible, &channel1);
+  ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c: In function 'tsl2561_luminosity':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:608:9: error: 'TSL2561_INTEGRATION_TIME_13MS' undeclared (first use in this function)
+    case TSL2561_INTEGRATION_TIME_13MS:
+         ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:613:9: error: 'TSL2561_INTEGRATION_TIME_101MS' undeclared (first use in this function)
+    case TSL2561_INTEGRATION_TIME_101MS:
+         ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:626:41: error: 'TSL2561_GAIN_0X' undeclared (first use in this function)
+    if((*channel0 < lo) && (tsl->gain == TSL2561_GAIN_0X)) {
+                                         ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:627:28: error: 'TSL2561_GAIN_16X' undeclared (first use in this function)
+     tsl2561_set_gain(_tsl, TSL2561_GAIN_16X);
+                            ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c: In function 'tsl2561_compute_lux':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:658:8: error: 'TSL2561_INTEGRATION_TIME_13MS' undeclared (first use in this function)
+   case TSL2561_INTEGRATION_TIME_13MS:
+        ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:662:8: error: 'TSL2561_INTEGRATION_TIME_101MS' undeclared (first use in this function)
+   case TSL2561_INTEGRATION_TIME_101MS:
+        ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:694:14: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+    if((ratio >= 0) && (ratio <= TSL2561_K1C)){
+              ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:715:14: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+    if((ratio >= 0) && (ratio <= TSL2561_K1T)){
+              ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561-2.c:737:9: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  if(tmp < 0)
+         ^
+cc1: some warnings being treated as errors
+make[1]: *** [main.o] Error 1
+make: *** [main-build] Error 2
+11:39:29 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+11:39:31 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+11:39:34 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'calculateLux':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:60:13: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+  if ((ratio >= 0) && (ratio <= TSL2561_LUX_K1T)) {
+             ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:90:11: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  if (temp < 0)
+           ^
+AR libmain.a
+LD app-template.elf
+esptool.py v2.0-beta1
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin
+11:50:36 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+11:50:39 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+11:50:41 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'calculateLux':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:60:13: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+  if ((ratio >= 0) && (ratio <= TSL2561_LUX_K1T)) {
+             ^
+AR libmain.a
+LD app-template.elf
+esptool.py v2.0-beta1
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin
+11:51:07 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+11:51:09 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+11:51:11 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+AR libmain.a
+LD app-template.elf
+esptool.py v2.0-beta1
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin
+12:01:08 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+12:01:10 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+12:01:12 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+In file included from /home/lane/workspace/mailbox/main/./main.c:6:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'read_current_lux':
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:107:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'long int' [-Werror=format=]
+ #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+                           ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:112:27: note: in expansion of macro 'LOG_COLOR'
+ #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+                           ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:124:37: note: in expansion of macro 'LOG_COLOR_I'
+ #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%d) %s: " format LOG_RESET_COLOR "\n"
+                                     ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:143:117: note: in expansion of macro 'LOG_FORMAT'
+ #define ESP_LOGI( tag, format, ... )  if (LOG_LOCAL_LEVEL >= ESP_LOG_INFO)    { esp_log_write(ESP_LOG_INFO,    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); }
+                                                                                                                     ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:216:2: note: in expansion of macro 'ESP_LOGI'
+  ESP_LOGI("mailbox", "1x value %d", value);
+  ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:107:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'long int' [-Werror=format=]
+ #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+                           ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:112:27: note: in expansion of macro 'LOG_COLOR'
+ #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+                           ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:124:37: note: in expansion of macro 'LOG_COLOR_I'
+ #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%d) %s: " format LOG_RESET_COLOR "\n"
+                                     ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:143:117: note: in expansion of macro 'LOG_FORMAT'
+ #define ESP_LOGI( tag, format, ... )  if (LOG_LOCAL_LEVEL >= ESP_LOG_INFO)    { esp_log_write(ESP_LOG_INFO,    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); }
+                                                                                                                     ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:221:2: note: in expansion of macro 'ESP_LOGI'
+  ESP_LOGI("mailbox", "calculated 1ux value %d", lux);
+  ^
+cc1: some warnings being treated as errors
+make[1]: *** [main.o] Error 1
+/home/lane/esp/esp-idf/make/component_wrapper.mk:176: recipe for target 'main.o' failed
+/home/lane/esp/esp-idf/make/project.mk:382: recipe for target 'main-build' failed
+make: *** [main-build] Error 2
+12:01:44 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+12:01:47 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+12:01:49 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+In file included from /home/lane/workspace/mailbox/main/./main.c:6:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'read_current_lux':
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:107:27: error: unknown conversion type character 0x1b in format [-Werror=format=]
+ #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+                           ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:112:27: note: in expansion of macro 'LOG_COLOR'
+ #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+                           ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:124:37: note: in expansion of macro 'LOG_COLOR_I'
+ #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%d) %s: " format LOG_RESET_COLOR "\n"
+                                     ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:143:117: note: in expansion of macro 'LOG_FORMAT'
+ #define ESP_LOGI( tag, format, ... )  if (LOG_LOCAL_LEVEL >= ESP_LOG_INFO)    { esp_log_write(ESP_LOG_INFO,    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); }
+                                                                                                                     ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:216:2: note: in expansion of macro 'ESP_LOGI'
+  ESP_LOGI("mailbox", "1x value %l", value);
+  ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:107:27: error: too many arguments for format [-Werror=format-extra-args]
+ #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+                           ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:112:27: note: in expansion of macro 'LOG_COLOR'
+ #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+                           ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:124:37: note: in expansion of macro 'LOG_COLOR_I'
+ #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%d) %s: " format LOG_RESET_COLOR "\n"
+                                     ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:143:117: note: in expansion of macro 'LOG_FORMAT'
+ #define ESP_LOGI( tag, format, ... )  if (LOG_LOCAL_LEVEL >= ESP_LOG_INFO)    { esp_log_write(ESP_LOG_INFO,    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); }
+                                                                                                                     ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:216:2: note: in expansion of macro 'ESP_LOGI'
+  ESP_LOGI("mailbox", "1x value %l", value);
+  ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:107:27: error: unknown conversion type character 0x1b in format [-Werror=format=]
+ #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+                           ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:112:27: note: in expansion of macro 'LOG_COLOR'
+ #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+                           ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:124:37: note: in expansion of macro 'LOG_COLOR_I'
+ #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%d) %s: " format LOG_RESET_COLOR "\n"
+                                     ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:143:117: note: in expansion of macro 'LOG_FORMAT'
+ #define ESP_LOGI( tag, format, ... )  if (LOG_LOCAL_LEVEL >= ESP_LOG_INFO)    { esp_log_write(ESP_LOG_INFO,    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); }
+                                                                                                                     ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:221:2: note: in expansion of macro 'ESP_LOGI'
+  ESP_LOGI("mailbox", "calculated 1ux value %l", lux);
+  ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:107:27: error: too many arguments for format [-Werror=format-extra-args]
+ #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+                           ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:112:27: note: in expansion of macro 'LOG_COLOR'
+ #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+                           ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:124:37: note: in expansion of macro 'LOG_COLOR_I'
+ #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%d) %s: " format LOG_RESET_COLOR "\n"
+                                     ^
+/home/lane/esp/esp-idf/components/log/include/esp_log.h:143:117: note: in expansion of macro 'LOG_FORMAT'
+ #define ESP_LOGI( tag, format, ... )  if (LOG_LOCAL_LEVEL >= ESP_LOG_INFO)    { esp_log_write(ESP_LOG_INFO,    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); }
+                                                                                                                     ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:221:2: note: in expansion of macro 'ESP_LOGI'
+  ESP_LOGI("mailbox", "calculated 1ux value %l", lux);
+  ^
+cc1: some warnings being treated as errors
+/home/lane/esp/esp-idf/make/component_wrapper.mk:176: recipe for target 'main.o' failed
+/home/lane/esp/esp-idf/make/project.mk:382: recipe for target 'main-build' failed
+make[1]: *** [main.o] Error 1
+make: *** [main-build] Error 2
+12:04:03 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+12:04:05 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+12:04:07 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+AR libmain.a
+LD app-template.elf
+esptool.py v2.0-beta1
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin
+12:14:54 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+12:14:56 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+12:14:57 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+AR libmain.a
+LD app-template.elf
+esptool.py v2.0-beta1
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin
+12:15:54 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+12:15:55 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+12:15:58 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+AR libmain.a
+LD app-template.elf
+esptool.py v2.0-beta1
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin
+13:24:55 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+13:24:56 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+13:24:59 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+AR libmain.a
+LD app-template.elf
+esptool.py v2.0-beta1
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin
+13:29:27 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+13:29:28 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+13:29:30 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'callI2C':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:113:28: warning: passing argument 2 of 'i2c_master_read_byte' makes pointer from integer without a cast [-Wint-conversion]
+  i2c_master_read_byte(cmd, data, 1);
+                            ^
+In file included from /home/lane/workspace/mailbox/main/./main.c:10:0:
+/home/lane/esp/esp-idf/components/driver/include/driver/i2c.h:291:11: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ esp_err_t i2c_master_read_byte(i2c_cmd_handle_t cmd_handle, uint8_t* data, int ack);
+           ^
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'read_current_lux':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:126:16: warning: passing argument 2 of 'callI2C' makes integer from pointer without a cast [-Wint-conversion]
+  callI2C(&cmd, &data1_l);
+                ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:103:6: note: expected 'char' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void callI2C(i2c_cmd_handle_t *cmd, char addr, uint8_t data){
+      ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:126:2: error: too few arguments to function 'callI2C'
+  callI2C(&cmd, &data1_l);
+  ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:103:6: note: declared here
+/home/lane/esp/esp-idf/make/component_wrapper.mk:176: recipe for target 'main.o' failed
+/home/lane/esp/esp-idf/make/project.mk:382: recipe for target 'main-build' failed
+ void callI2C(i2c_cmd_handle_t *cmd, char addr, uint8_t data){
+      ^
+make[1]: *** [main.o] Error 1
+make: *** [main-build] Error 2
+13:32:04 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+13:32:07 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+13:32:09 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'callI2C':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:113:28: warning: passing argument 2 of 'i2c_master_read_byte' makes pointer from integer without a cast [-Wint-conversion]
+  i2c_master_read_byte(cmd, data, 1);
+                            ^
+In file included from /home/lane/workspace/mailbox/main/./main.c:10:0:
+/home/lane/esp/esp-idf/components/driver/include/driver/i2c.h:291:11: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ esp_err_t i2c_master_read_byte(i2c_cmd_handle_t cmd_handle, uint8_t* data, int ack);
+           ^
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'read_current_lux':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:126:16: warning: passing argument 2 of 'callI2C' makes integer from pointer without a cast [-Wint-conversion]
+  callI2C(&cmd, &data1_l);
+                ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:103:6: note: expected 'char' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void callI2C(i2c_cmd_handle_t* cmd, char addr, uint8_t data){
+      ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:126:2: error: too few arguments to function 'callI2C'
+  callI2C(&cmd, &data1_l);
+  ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:103:6: note: declared here
+ void callI2C(i2c_cmd_handle_t* cmd, char addr, uint8_t data){
+      ^
+/home/lane/esp/esp-idf/make/component_wrapper.mk:176: recipe for target 'main.o' failed
+/home/lane/esp/esp-idf/make/project.mk:382: recipe for target 'main-build' failed
+make[1]: *** [main.o] Error 1
+make: *** [main-build] Error 2
+13:32:51 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+13:32:53 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+13:32:56 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'callI2C':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:113:28: warning: passing argument 2 of 'i2c_master_read_byte' makes pointer from integer without a cast [-Wint-conversion]
+  i2c_master_read_byte(cmd, data, 1);
+                            ^
+In file included from /home/lane/workspace/mailbox/main/./main.c:10:0:
+/home/lane/esp/esp-idf/components/driver/include/driver/i2c.h:291:11: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ esp_err_t i2c_master_read_byte(i2c_cmd_handle_t cmd_handle, uint8_t* data, int ack);
+           ^
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'read_current_lux':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:126:16: warning: passing argument 2 of 'callI2C' makes integer from pointer without a cast [-Wint-conversion]
+  callI2C(&cmd, &data1_l);
+                ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:103:6: note: expected 'char' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void callI2C(i2c_cmd_handle_t *cmd, char addr, uint8_t data){
+      ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:126:2: error: too few arguments to function 'callI2C'
+  callI2C(&cmd, &data1_l);
+/home/lane/esp/esp-idf/make/component_wrapper.mk:176: recipe for target 'main.o' failed
+/home/lane/esp/esp-idf/make/project.mk:382: recipe for target 'main-build' failed
+  ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:103:6: note: declared here
+ void callI2C(i2c_cmd_handle_t *cmd, char addr, uint8_t data){
+      ^
+make[1]: *** [main.o] Error 1
+make: *** [main-build] Error 2
+13:33:21 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+13:33:22 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+13:33:25 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'callI2C':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:113:28: warning: passing argument 2 of 'i2c_master_read_byte' makes pointer from integer without a cast [-Wint-conversion]
+  i2c_master_read_byte(cmd, data, 1);
+                            ^
+In file included from /home/lane/workspace/mailbox/main/./main.c:10:0:
+/home/lane/esp/esp-idf/components/driver/include/driver/i2c.h:291:11: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ esp_err_t i2c_master_read_byte(i2c_cmd_handle_t cmd_handle, uint8_t* data, int ack);
+           ^
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'read_current_lux':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:126:22: warning: passing argument 3 of 'callI2C' makes integer from pointer without a cast [-Wint-conversion]
+  callI2C(&cmd, 0x8c, &data1_l);
+                      ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:103:6: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void callI2C(i2c_cmd_handle_t *cmd, char addr, uint8_t data){
+      ^
+AR libmain.a
+LD app-template.elf
+esptool.py v2.0-beta1
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin
+13:34:00 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+13:34:01 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+13:34:04 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'callI2C':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:113:28: warning: passing argument 2 of 'i2c_master_read_byte' makes pointer from integer without a cast [-Wint-conversion]
+  i2c_master_read_byte(cmd, data, 1);
+                            ^
+In file included from /home/lane/workspace/mailbox/main/./main.c:10:0:
+/home/lane/esp/esp-idf/components/driver/include/driver/i2c.h:291:11: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ esp_err_t i2c_master_read_byte(i2c_cmd_handle_t cmd_handle, uint8_t* data, int ack);
+           ^
+In file included from /home/lane/workspace/mailbox/main/./main.c:16:0:
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c: In function 'read_current_lux':
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:126:22: warning: passing argument 3 of 'callI2C' makes integer from pointer without a cast [-Wint-conversion]
+  callI2C(&cmd, 0x8c, &data1_l);
+                      ^
+/home/lane/workspace/mailbox/main/./tsl2561/tsl2561.c:103:6: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void callI2C(i2c_cmd_handle_t *cmd, uint8_t addr, uint8_t data){
+      ^
+AR libmain.a
+LD app-template.elf
+esptool.py v2.0-beta1
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin
+13:35:58 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+13:35:59 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+13:36:02 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+AR libmain.a
+LD app-template.elf
+esptool.py v2.0-beta1
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin
+13:36:27 **** Incremental Build of configuration Default for project firstESP ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/firstESP/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/firstESP/build/app-template.bin 0x8000 /home/lane/workspace/firstESP/build/partitions_singleapp.bin
+13:36:29 **** Incremental Build of configuration Default for project i2cscanner ****
+make all 
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/i2cscanner/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/i2cscanner/build/app-template.bin 0x8000 /home/lane/workspace/i2cscanner/build/partitions_singleapp.bin
+13:36:31 **** Incremental Build of configuration Default for project mailbox ****
+make all 
+CC main.o
+AR libmain.a
+LD app-template.elf
+esptool.py v2.0-beta1
+To flash all build output, run 'make flash' or:
+python /home/lane/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before esp32r0 --after hard_reset write_flash -u --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/lane/workspace/mailbox/build/bootloader/bootloader.bin 0x10000 /home/lane/workspace/mailbox/build/app-template.bin 0x8000 /home/lane/workspace/mailbox/build/partitions_singleapp.bin

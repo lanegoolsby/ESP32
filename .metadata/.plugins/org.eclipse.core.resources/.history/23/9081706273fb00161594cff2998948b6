@@ -1,0 +1,77 @@
+#include "freertos/FreeRTOS.h"
+#include "esp_wifi.h"
+#include "esp_system.h"
+#include "esp_event.h"
+#include "esp_event_loop.h"
+#include "esp_log.h"
+#include "nvs_flash.h"
+#include "driver/gpio.h"
+
+#include <driver/i2c.h>
+#include <esp_log.h>
+#include <freertos/task.h>
+#include <stdio.h>
+#include "sdkconfig.h"
+
+#include "lib/tsl2561.h"
+
+
+//static const char *TAG = "example";
+
+esp_err_t event_handler(void *ctx, system_event_t *event)
+{
+    return ESP_OK;
+}
+
+void app_main(void)
+{
+	init_2561();
+	while(1){
+		uint8_t sensor_data_h, sensor_data_l;
+		read_current_lux( I2C_MASTER_NUM, &sensor_data_h, &sensor_data_l);
+		vTaskDelay(1000 / portTICK_PERIOD_MS);
+	}
+
+    /*nvs_flash_init();
+    tcpip_adapter_init();
+    ESP_ERROR_CHECK( esp_event_loop_init(event_handler, NULL) );
+    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK( esp_wifi_init(&cfg) );
+    ESP_ERROR_CHECK( esp_wifi_set_storage(WIFI_STORAGE_RAM) );
+    ESP_ERROR_CHECK( esp_wifi_set_mode(WIFI_MODE_STA) );
+    wifi_config_t sta_config = {
+        .sta = {
+            .ssid = "middleEarth",
+            .password = "snoogins",
+            .bssid_set = 0
+        }
+    };
+    ESP_ERROR_CHECK( esp_wifi_set_config(WIFI_IF_STA, &sta_config) );
+    ESP_ERROR_CHECK( esp_wifi_start() );
+    ESP_ERROR_CHECK( esp_wifi_connect() );
+
+    int ret;
+	uint8_t sensor_data_h, sensor_data_l;
+    //init_2561();
+	//init_master();
+
+    gpio_set_direction(GPIO_NUM_4, GPIO_MODE_OUTPUT);
+    int level = 0;
+    while (1) {
+        gpio_set_level(GPIO_NUM_4, level);
+        level = !level;
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        ret = read_current_lux( I2C_MASTER_NUM, &sensor_data_h, &sensor_data_l);
+        //ESP_LOGI(TAG, "Sensor Low is %d", sensor_data_l);
+        //ESP_LOGI(TAG, "Sensor High is %d", sensor_data_h);
+        //ESP_LOGI(TAG, "Value is %d", ret);
+    	if (ret == ESP_OK) {
+    	            //printf("data_h: %02x\n", sensor_data_h);
+    	            //printf("data_l: %02x\n", sensor_data_l);
+    	            //printf("sensor val: %f\n", ( sensor_data_h << 8 | sensor_data_l ) / 1.2);
+    	        } else {
+    	            printf("No ack, sensor not connected...skip...\n");
+    	        }
+    }*/
+}
+

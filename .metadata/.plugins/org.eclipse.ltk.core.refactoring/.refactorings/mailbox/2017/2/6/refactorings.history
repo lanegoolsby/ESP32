@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;mailbox/main/tsl2561&apos; to &apos;tsl2561.h&apos;" description="Rename resource &apos;tsl2561&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="main/tsl2561" name="tsl2561.h" stamp="1486335154876" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;mailbox/main/drivers&apos; to &apos;lib&apos;" description="Rename resource &apos;drivers&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="main/drivers" name="lib" stamp="1486433558628" updateReferences="true"/>
+</session>
