@@ -25,7 +25,7 @@ void app_main(void) {
 	init_2561();
 	while (1) {
 		read_current_lux( );
-		vTaskDelay(1000 / portTICK_PERIOD_MS);
+		vTaskDelay(2000 / portTICK_PERIOD_MS);
 	}
 }
 

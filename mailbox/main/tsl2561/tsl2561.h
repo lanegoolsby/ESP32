@@ -2,12 +2,15 @@
 #define TSL2561_ADDR_LOW        (0x29)
 #define TSL2561_ADDR_FLOAT      (0x39)    // Default address (pin left floating)
 #define TSL2561_ADDR_HIGH       (0x49)
-#define TSL2561_ADDR_CMD		(0xAC)
+//#define TSL2561_ADDR_CMD		(0xAC)
 
 #define TSL2561_ADDR TSL2561_ADDR_FLOAT
 
+#define TSL2561_COMMAND_BIT		  (0x80)
+#define TSL2561_CONTROL_POWERON   (0x03)
+
 //ESP Config
-#define DATA_LENGTH          512
+//#define DATA_LENGTH          512
 
 #define I2C_MASTER_SCL_IO    19    /*!< gpio number for I2C master clock */
 #define I2C_MASTER_SDA_IO    18    /*!< gpio number for I2C master data  */

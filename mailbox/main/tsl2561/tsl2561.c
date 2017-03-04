@@ -1,7 +1,7 @@
 #include "tsl2561.h"
 #include "freertos/FreeRTOS.h"
 
-static void init_2561() {
+void init_2561() {
 	i2c_config_t conf;
 	conf.mode = I2C_MODE_MASTER;
 	conf.sda_io_num = I2C_MASTER_SDA_IO;
@@ -12,13 +12,11 @@ static void init_2561() {
 	ESP_ERROR_CHECK(i2c_param_config(I2C_NUM_0, &conf));
 	ESP_ERROR_CHECK(i2c_driver_install(I2C_NUM_0, I2C_MODE_MASTER, 0, 0, 0));
 
-	ESP_LOGI("mailbox", "I2C Master mode set in init_2561()");
-
 	i2c_cmd_handle_t cmd = i2c_cmd_link_create();
 	ESP_ERROR_CHECK(i2c_master_start(cmd));
-	i2c_master_write_byte(cmd, (0x39 << 1) | I2C_MASTER_WRITE, 1);
-	i2c_master_write_byte(cmd, 0x80, 1);
-	i2c_master_write_byte(cmd, 0x03, 1);
+	i2c_master_write_byte(cmd, (TSL2561_ADDR << 1) | I2C_MASTER_WRITE, 1);
+	i2c_master_write_byte(cmd, TSL2561_COMMAND_BIT, 1);
+	i2c_master_write_byte(cmd, TSL2561_CONTROL_POWERON, 1);
 	i2c_master_stop(cmd);
 	i2c_master_cmd_begin(I2C_NUM_0, cmd, 1000 / portTICK_RATE_MS);
 	i2c_cmd_link_delete(cmd);
@@ -79,14 +77,15 @@ long calculateLux(uint16_t ch0, uint16_t ch1) {
 	temp = ((channel0 * b) - (channel1 * m));
 
 	// do not allow negative lux value
-	//if (temp < 0)
-	//	temp = 0;
+	if (temp < 0){
+		temp = 0;
+	}
 
 	// round lsb (2^(LUX_SCALE-1))
 	temp += (1 << (TSL2561_LUX_LUXSCALE - 1));
 
 	// strip off fractional portion
-	long lux = temp >> TSL2561_LUX_LUXSCALE;
+	uint32_t lux = temp >> TSL2561_LUX_LUXSCALE;
 
 	// Signal I2C had no errors
 	return lux;
@@ -100,6 +99,8 @@ void callI2C(uint8_t addr, uint8_t *data){
 	i2c_master_stop(cmd);
 	i2c_master_cmd_begin(I2C_NUM_0, cmd, 500 / portTICK_RATE_MS);
 
+	i2c_cmd_link_delete(cmd);
+
 	cmd = i2c_cmd_link_create();
 	ESP_ERROR_CHECK(i2c_master_start(cmd));
 	ESP_ERROR_CHECK(i2c_master_write_byte(cmd, (TSL2561_ADDR << 1) | I2C_MASTER_READ, 1));
@@ -108,6 +109,10 @@ void callI2C(uint8_t addr, uint8_t *data){
 	i2c_master_cmd_begin(I2C_NUM_0, cmd, 500 / portTICK_RATE_MS);
 
 	i2c_cmd_link_delete(cmd);
+}
+
+void set_tsl2561_interrupt(){
+	//TBD
 }
 
 esp_err_t read_current_lux() {
